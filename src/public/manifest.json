@@ -1,0 +1,21 @@
+{
+    "name": "Dictionary extension",
+    "description": "Dictionary extension",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "js/background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://kinopub.me/*"],
+            "js": ["js/content.js"],
+            "css": ["css/content.css"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": ["activeTab", "scripting", "cookies", "storage"],
+    "host_permissions": ["https://kinopub.me/*", "http://localhost:3001/*"]
+}

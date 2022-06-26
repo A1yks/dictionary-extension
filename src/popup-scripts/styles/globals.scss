@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    width: 640px;
+    height: 480px;
+    max-width: 640px;
+    max-height: 480px;
+    overflow: hidden;
+}
+
+body {
+    width: 640px;
+    height: 480px;
+    max-width: 640px;
+    max-height: 480px;
+    overflow: hidden;
+    font-family: Roboto;
+}
+
+#root {
+    display: flex;
+    width: 100%;
+}
+
+.app {
+    width: 100%;
+    font-size: 1.6rem;
+    background: #eceff1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

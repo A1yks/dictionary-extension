@@ -1,0 +1,11 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "extends": ["plugin:@typescript-eslint/recommended"],
+    "rules": {
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "@typescript-eslint/ban-ts-comment": "off",
+        "@typescript-eslint/no-explicit-any": "off"
+    },
+    "plugins": ["react", "@typescript-eslint"],
+    "ignorePatterns": ["webpack.config.ts", "dist"]
+}

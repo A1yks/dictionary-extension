@@ -1,0 +1,24 @@
+.appBar {
+    .usernameWrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .backArrowBtn {
+        margin-right: 8px;
+    }
+
+    .icon {
+        color: #fff;
+    }
+
+    .iconsWrapper {
+        margin-left: auto;
+
+        .iconBtn {
+            &:not(:first-child) {
+                margin-left: 8px;
+            }
+        }
+    }
+}

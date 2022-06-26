@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "noFallthroughCasesInSwitch": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "jsx": "react-jsx",
+        "checkJs": true,
+        "baseUrl": "./src",
+        "paths": {
+            "@popup/*": ["./popup-scripts/*"],
+            "@content/*": ["./content-scripts/*"]
+        },
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": false,
+        "sourceMap": true
+    },
+    "include": ["src", "declarations.d.ts"],
+    "exclude": ["webpack.config.ts", "dist"]
+}
